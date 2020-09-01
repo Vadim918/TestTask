@@ -1,0 +1,30 @@
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.deps.json
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.dll
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.csprojAssemblyReference.cache
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.AssemblyInfoInputs.cache
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.AssemblyInfo.cs
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Core.dll
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.pdb
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Core.pdb
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.csproj.CopyComplete
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.dll
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.pdb
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.runtimeconfig.json
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.runtimeconfig.dev.json
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Test Task Bus1\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.genruntimeconfig.cache
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.deps.json
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.runtimeconfig.json
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.runtimeconfig.dev.json
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.dll
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Infrastructure.pdb
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Core.dll
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\bin\Debug\netcoreapp3.1\TestTask.Core.pdb
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.csprojAssemblyReference.cache
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.AssemblyInfoInputs.cache
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.AssemblyInfo.cs
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.csproj.CoreCompileInputs.cache
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.csproj.CopyComplete
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.dll
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.pdb
+D:\TeskTaskVady\TestTaskBus1\TestTask.Infrastructure\obj\Debug\netcoreapp3.1\TestTask.Infrastructure.genruntimeconfig.cache
