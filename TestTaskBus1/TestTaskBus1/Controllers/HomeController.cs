@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using TestTask.Core.Entities;
 using TestTask.Core.Repositories;
+using TestTaskBus1.BL;
 using TestTaskBus1.Models.ViewModels;
 
 namespace TestTaskBus1.Controllers
 {
+    [Route("")]
     public class HomeController : Controller
     {
         private readonly IUnitOfWork _uow;
@@ -26,7 +29,7 @@ namespace TestTaskBus1.Controllers
         [HttpPost("[controller]/[action]")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var entity = await _uow.MainRepository.Find(id);
+            var entity = await _uow.MainRepository.FindById(id);
             if (entity == null) return NotFound();
 
             _uow.MainRepository.Remove(entity);
@@ -43,17 +46,37 @@ namespace TestTaskBus1.Controllers
             return View(model);
         }
 
-
         [HttpPost("[controller]/[action]")]
-        public async Task<IActionResult> CountUrl(Guid id)
+        public IActionResult Add(UrlEditModel model)
         {
-            var entity = await _uow.MainRepository.Find(id);
+            if (!ModelState.IsValid) return View(model);
+
+            var shortUrl = TokenGenerator.GenerateShortUrl();
+
+            var entity = new Main
+            {
+                Id = Guid.NewGuid(),
+                LongUrl = model.LongUrl,
+                EditableUrl = shortUrl,
+                Date = DateTime.Now
+            };
+
+            _uow.MainRepository.Add(entity);
+            _uow.Commit();
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet("{id}")]
+        [HttpGet("[controller]/[action]/{id}")]
+        public async Task<IActionResult> CountUrl(string id)
+        {
+            var entity = await _uow.MainRepository.FindByUrl(id);
             if (entity == null) return NotFound();
 
             _uow.MainRepository.Count(entity);
             _uow.Commit();
 
-            return Redirect(entity.EditableUrl);
+            return Redirect(entity.LongUrl);
         }
     }
 }

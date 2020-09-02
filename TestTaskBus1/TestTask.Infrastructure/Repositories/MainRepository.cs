@@ -24,10 +24,19 @@ namespace TestTask.Infrastructure.Repositories
             entity.Count++;
         }
 
+        public void Add(Main entity)
+        {
+            _dbSet.Add(entity);
+        }
 
-        public async Task<Main> Find(Guid id)
+        public async Task<Main> FindById(Guid id)
         {
             return await _dbSet.SingleOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<Main> FindByUrl(string url)
+        {
+            return await _dbSet.SingleOrDefaultAsync(x => x.EditableUrl == url);
         }
 
 

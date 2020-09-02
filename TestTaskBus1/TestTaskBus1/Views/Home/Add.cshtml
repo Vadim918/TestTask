@@ -7,18 +7,20 @@
     <div class="card-header">
         <h3>Add URL</h3>
     </div>
-    <form asp-action="Add">
+    <form method="post" asp-action="Add">
 
         <div class="card-body">
             <div class="form-group">
                 <label asp-for="LongUrl"></label>
-                <input asp-for="LongUrl" class="form-control"/>
+                <input asp-for="LongUrl" class="form-control" />
                 <span asp-validation-for="LongUrl" class="text-danger"></span>
             </div>
         </div>
         <div class="card-footer">
-            <input type="submit" class="btn btn-primary" value="Save"/>
+            <input type="submit" class="btn btn-primary" value="Save" />
             <a asp-action="Index" class="btn btn-secondary">Return to list</a>
         </div>
     </form>
 </div>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.10/jquery.validate.unobtrusive.min.js"></script>

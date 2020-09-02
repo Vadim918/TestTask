@@ -15,9 +15,12 @@ namespace TestTask.Infrastructure
             optionsBuilder.UseMySql(Connection);
         }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            ////modelBuilder.ApplyConfiguration(new MainConfiguration());
 
             modelBuilder.Entity<Main>().HasData(new Main
                 {
