@@ -43,6 +43,7 @@
                             <input type="hidden" name="id" value="@item.Id"/>
                             <input type="submit" class="btn btn-secondary" value="Delete"/>
                         </form>
+                        <a asp-action="EditUrl" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
                     </td>
                 </tr>
             }

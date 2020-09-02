@@ -26,28 +26,46 @@ namespace TestTaskBus1.Controllers
             return View(model);
         }
 
-        [HttpPost("[controller]/[action]")]
-        public async Task<IActionResult> Delete(Guid id)
+        [HttpGet("[controller]/[action]/{id:guid}")]
+        public async Task<IActionResult> EditUrl(Guid id)
         {
             var entity = await _uow.MainRepository.FindById(id);
             if (entity == null) return NotFound();
 
-            _uow.MainRepository.Remove(entity);
-            _uow.Commit();
+            var model = new UrlEditModel
+            {
+                LongUrl = entity.LongUrl,
+                Date = entity.Date
+            };
 
+            return View(model);
+        }
+
+        [HttpPost("[controller]/[action]/{id:guid}")]
+        public async Task<IActionResult> EditUrl(UrlEditModel model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var entity = await _uow.MainRepository.FindById(model.Id);
+            if (entity == null) return NotFound();
+            entity.LongUrl = model.LongUrl;
+            entity.Date = model.Date;
+
+            _uow.Commit();
             return RedirectToAction("Index");
         }
+
 
         [HttpGet("[controller]/[action]")]
         public IActionResult Add()
         {
-            var model = new UrlEditModel();
+            var model = new UrlAddModel();
 
             return View(model);
         }
 
         [HttpPost("[controller]/[action]")]
-        public IActionResult Add(UrlEditModel model)
+        public IActionResult Add(UrlAddModel model)
         {
             if (!ModelState.IsValid) return View(model);
 
@@ -77,6 +95,18 @@ namespace TestTaskBus1.Controllers
             _uow.Commit();
 
             return Redirect(entity.LongUrl);
+        }
+
+        [HttpPost("[controller]/[action]")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var entity = await _uow.MainRepository.FindById(id);
+            if (entity == null) return NotFound();
+
+            _uow.MainRepository.Remove(entity);
+            _uow.Commit();
+
+            return RedirectToAction("Index");
         }
     }
 }

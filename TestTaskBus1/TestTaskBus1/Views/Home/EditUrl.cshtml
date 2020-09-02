@@ -1,14 +1,13 @@
-﻿@model TestTaskBus1.Models.ViewModels.UrlAddModel
-@{
-    ViewBag.Title = "Add URL";
-}
+﻿@model TestTaskBus1.Models.ViewModels.UrlEditModel
 
+@{
+    ViewBag.Title = "Edit URL";
+}
 <div class="card">
     <div class="card-header">
-        <h3>Add URL</h3>
+        <h3>Edit book</h3>
     </div>
-    <form method="post" asp-action="Add">
-
+    <form asp-action="EditUrl">
         <div class="card-body">
             <div class="form-group">
                 <label asp-for="LongUrl"></label>
@@ -16,6 +15,12 @@
                 <span asp-validation-for="LongUrl" class="text-danger"></span>
             </div>
         </div>
+        <div class="form-group">
+            <label asp-for="Date"></label>
+            <input type="date" asp-for="Date" asp-format="{0:yyyy-MM-dd}" class="form-control" data-val="false"/>
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+
         <div class="card-footer">
             <input type="submit" class="btn btn-primary" value="Save"/>
             <a asp-action="Index" class="btn btn-secondary">Return to list</a>

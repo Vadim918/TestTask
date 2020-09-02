@@ -268,3 +268,4 @@ D:\TeskTaskVady\TestTaskBus1\TestTaskBus1\obj\Debug\netcoreapp3.1\staticwebasset
 D:\TeskTaskVady\TestTaskBus1\TestTaskBus1\obj\Debug\netcoreapp3.1\TestTaskBus1.dll
 D:\TeskTaskVady\TestTaskBus1\TestTaskBus1\obj\Debug\netcoreapp3.1\TestTaskBus1.pdb
 D:\TeskTaskVady\TestTaskBus1\TestTaskBus1\obj\Debug\netcoreapp3.1\TestTaskBus1.genruntimeconfig.cache
+D:\TeskTaskVady\TestTaskBus1\TestTaskBus1\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditUrl.cshtml.g.cs
