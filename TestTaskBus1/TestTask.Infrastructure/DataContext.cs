@@ -3,9 +3,15 @@ using TestTask.Core.Entities;
 
 namespace TestTask.Infrastructure
 {
-    internal class DataContext : DbContext
+    internal sealed class DataContext : DbContext
     {
         private const string Connection = "server=localhost;database=mydemo;user=root;password=mypassword";
+
+
+        public DataContext()
+        {
+            Database.EnsureCreated();
+        }
 
         public DbSet<Main> Main { get; set; }
 
@@ -19,7 +25,7 @@ namespace TestTask.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            ////modelBuilder.ApplyConfiguration(new MainConfiguration());
+            // modelBuilder.ApplyConfiguration(new MainConfiguration());
         }
     }
 }
