@@ -13,7 +13,7 @@ namespace TestTaskBus1.BL
                 .OrderBy(o => new Random().Next())
                 .ToList()
                 .ForEach(i => urlsafe += Convert.ToChar(i));
-            var token = urlsafe.Substring(new Random().Next(0, urlsafe.Length), new Random().Next(2, 6));
+            var token = urlsafe.Substring(new Random().Next(0, urlsafe.Length - 6), new Random().Next(2, 6));
 
             return token;
         }
